@@ -19,14 +19,14 @@ public class Ciclo  implements java.io.Serializable {
 
 
      private Integer idCiclo;
-     private String nombreCiclo;
+     private String nombre;
      private Integer horas;
 
     public Ciclo() {
     }
 
     public Ciclo(String nombreCiclo, Integer horas) {
-       this.nombreCiclo = nombreCiclo;
+       this.nombre = nombreCiclo;
        this.horas = horas;
     }
    
@@ -44,12 +44,12 @@ public class Ciclo  implements java.io.Serializable {
 
     
     @Column(name="nombreCiclo", length=100)
-    public String getNombreCiclo() {
-        return this.nombreCiclo;
+    public String getNombre() {
+        return this.nombre;
     }
     
-    public void setNombreCiclo(String nombreCiclo) {
-        this.nombreCiclo = nombreCiclo;
+    public void setNombre(String nombreCiclo) {
+        this.nombre = nombreCiclo;
     }
 
     

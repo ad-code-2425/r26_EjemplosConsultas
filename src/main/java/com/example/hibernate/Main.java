@@ -10,7 +10,7 @@ import com.example.hibernate.model.dao.CicloDAOHibernateImpl;
 import com.example.hibernate.model.dao.ICicloDAO;
 import com.example.hibernate.util.HibernateUtil;
 
-public class MainCicloApp {
+public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
     private static ICicloDAO cicloDAO;
@@ -88,7 +88,7 @@ public class MainCicloApp {
 
     private static void mostrarCiclo(Ciclo c) {
         System.out.println("ID: " + c.getIdCiclo() +
-                " | Nombre: " + c.getNombreCiclo() +
+                " | Nombre: " + c.getNombre() +
                 " | Horas: " + c.getHoras());
     }
 

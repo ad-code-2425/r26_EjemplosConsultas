@@ -3,7 +3,6 @@ package com.example.hibernate.util;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.service.ServiceRegistry;
 
 import com.example.hibernate.model.Ciclo;
 import com.example.hibernate.model.ComunidadAutonoma;

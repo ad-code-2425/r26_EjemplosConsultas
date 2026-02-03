@@ -5,6 +5,16 @@ import com.example.hibernate.model.Ciclo;
 
 public interface ICicloDAO {
 
-      List<Ciclo> findAll();
+    void save(Ciclo ciclo);
+
+    void update(Ciclo ciclo);
+
+    void delete(Ciclo ciclo);
+
+    Ciclo findById(Integer id);
+
+    List<Ciclo> findAll();
+    //Consulta extra
+    List<Object[]> findCiclosStats();
 
 }

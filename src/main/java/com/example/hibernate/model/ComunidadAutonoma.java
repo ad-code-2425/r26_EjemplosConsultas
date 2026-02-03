@@ -60,7 +60,7 @@ public class ComunidadAutonoma  implements java.io.Serializable {
         this.nombre = nombre;
     }
 
-@OneToMany(fetch=FetchType.LAZY, mappedBy="comunidadautonoma")
+@OneToMany(fetch=FetchType.LAZY, mappedBy="comunidadAutonoma")
     public Set<Provincia> getProvincias() {
         return this.provincias;
     }
