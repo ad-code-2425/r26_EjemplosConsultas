@@ -81,7 +81,9 @@ public class DireccionDAOHibernateImpl implements IDireccionDAO {
     //Consultas con join
 
      public List<Direccion> direccionesPorComunidad(String nombreComunidad) {
-        try (Session session = sessionFactory.openSession()) {
+         try (Session session = sessionFactory.openSession()) {
+            
+            //Probad a quitar los fetch y ver qué ocurre
             return session.createSelectionQuery(
                     "select d FROM Direccion d " +
                             "join fetch d.provincia p " +
